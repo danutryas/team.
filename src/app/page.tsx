@@ -1,3 +1,4 @@
+import HomeBuilder from "@/components/builder/homeBuilder";
 import Header from "@/components/header";
 import Hero from "@/components/hero";
 import Image from "next/image";
@@ -52,6 +53,24 @@ export default function Home() {
           </div>
         </div>
       </div>
+      <HomeBuilder
+        title="Chats for your distributed teams"
+        description="Team combines the immediacy of real-time chat with an email threading model. With Team, you can catch up on important conversations while ignoring irrelevant ones."
+        imgSrc="/images/image-1.png"
+        section={1}
+      />
+      <HomeBuilder
+        title="Choose how you want to work"
+        description="In Team, you’ve got all the flexibility to work when, where and how it’s best for you. You can easily chat, send audio and video clips, or hop on a huddle to talk things out live."
+        imgSrc="/images/image-2.png"
+        section={2}
+      />
+      <HomeBuilder
+        title="Move faster with your Team tools"
+        description="With your other work apps connected to Team, you can work faster by switching tabs less. And with powerful tools like Workflow Builder, you can automate away routine tasks."
+        imgSrc="/images/image-3.png"
+        section={3}
+      />
     </>
   );
 }
