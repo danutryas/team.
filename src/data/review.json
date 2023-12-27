@@ -1,0 +1,47 @@
+[
+  {
+    "star": 5,
+    "text": "Vestibulum eu quam nec neque pellentesque efficitur id eget nisl. Proin porta est convallis lacus blandit pretium sed non enim. Maecenas lacinia non orci at aliquam. Donec finibus, urna bibendum ultricies laoreet.",
+    "profile": {
+      "imgSrc": "",
+      "name": "Chealsea Morgan",
+      "position": "CEO ot Subway"
+    }
+  },
+  {
+    "star": 5,
+    "text": "In a laoreet purus. Integer turpis quam, laoreet id orci nec, ultrices lacinia nunc. Aliquam erat volutpat. Curabitur fringilla in purus eget egestas. Etiam quis.",
+    "profile": {
+      "imgSrc": "",
+      "name": "Nick Cave",
+      "position": "CMO ot Nokia"
+    }
+  },
+  {
+    "star": 5,
+    "text": "Aliquam pulvinar vestibulum blandit. Donec sed nisl libero. Fusce dignissim luctus sem eu dapibus. Pellentesque vulputate quam a quam volutpat, sed ullamcorper erat commodo.",
+    "profile": {
+      "imgSrc": "",
+      "name": "Lana Rosenfeld",
+      "position": "Senior VP ot Pinterest"
+    }
+  },
+  {
+    "star": 5,
+    "text": "Porta nisl dolor, molestie pellentesque elit molestie in. Morbi metus neque, elementum ullamcorper hendrerit eget, tincidunt et nisi. Sed magna nunc.",
+    "profile": {
+      "imgSrc": "",
+      "name": "Giorgio Moroder",
+      "position": "CTO ot Glovo"
+    }
+  },
+  {
+    "star": 5,
+    "text": "Integer turpis quam, laoreet id orci nec, ultrices lacinia nunc. Aliquam erat volutpat. Curabitur fringilla in purus eget egestas. Etiam quis. In a laoreet purus.",
+    "profile": {
+      "imgSrc": "",
+      "name": "Young Liu",
+      "position": "CAO ot Foxconn"
+    }
+  }
+]

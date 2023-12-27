@@ -1,0 +1,200 @@
+[
+  {
+    "id": "1",
+    "title": "Data exported by Team Cloud organization",
+    "description": "An internal investigation recently uncovered a vulnerability (identified as CVE-2022-21706) in Zulip’s invitation links.",
+    "imgSrc": "",
+    "profile": {
+      "imgSrc": "",
+      "name": "Cameron Williamson"
+    },
+    "date": "July 1, 2023"
+  },
+  {
+    "id": "2",
+    "title": "Swap long video calls and emails for asynchronous video",
+    "description": "Meetings are essential for communication and team building, but they’re often unproductive. Asynchronous video to the rescue.",
+    "imgSrc": "",
+    "profile": {
+      "imgSrc": "",
+      "name": "Robert Fox"
+    },
+    "date": "June 21, 2023"
+  },
+  {
+    "id": "3",
+    "title": "Flexibility reigns: six key takeaways from Frontiers 2023",
+    "description": "The future of work is having a digital HQ that works for you.",
+    "imgSrc": "",
+    "profile": {
+      "imgSrc": "",
+      "name": "Jenny Wilson"
+    },
+    "date": "June 10, 2023"
+  },
+  {
+    "id": "4",
+    "title": "Team plus Sales Cloud: Your sales team’s new digital HQ",
+    "description": "Why everyone on your sales team will benefit from our app’s killer features.",
+    "imgSrc": "",
+    "profile": {
+      "imgSrc": "",
+      "name": "Kathryn Murphy"
+    },
+    "date": "May 11, 2023"
+  },
+  {
+    "id": "5",
+    "title": "What is digital culture?",
+    "description": "The teams best prepared for change use modern digital communication tools, feel comfortable learning new ones and continually adapt how they work.",
+    "imgSrc": "",
+    "profile": {
+      "imgSrc": "",
+      "name": "Devon Lane"
+    },
+    "date": "May 22, 2023"
+  },
+  {
+    "id": "6",
+    "title": "Steve Dotto’s top 10 tips for overcoming workplace hiccups",
+    "description": "The executive producer of Dotto Tech shares his favorite Slack strategies for conquering common challenges in the digital-first workplace.",
+    "imgSrc": "",
+    "profile": {
+      "imgSrc": "",
+      "name": "Theresa Webb"
+    },
+    "date": "April 4, 2023"
+  },
+  {
+    "id": "7",
+    "title": "What’s new in Team: iPad updates, split-screen view and more",
+    "description": "An internal investigation recently uncovered a vulnerability (identified as CVE-2022-21706) in Zulip’s invitation links.",
+    "imgSrc": "",
+    "profile": {
+      "imgSrc": "",
+      "name": "Eleanor Pena"
+    },
+    "date": "March 18, 2023"
+  },
+  {
+    "id": "8",
+    "title": "Drive more efficiency and cost savings with these updates to Workflow Builder",
+    "description": "New and upcoming automation features help your teams do more with less.",
+    "imgSrc": "",
+    "profile": {
+      "imgSrc": "",
+      "name": "Jerome Bell"
+    },
+    "date": "February 12, 2023"
+  },
+  {
+    "id": "9",
+    "title": "7 tips to onboard sales reps with ease",
+    "description": "The executive producer of Dotto Tech shares his favorite Slack strategies for conquering common challenges in the digital-first workplace.",
+    "imgSrc": "",
+    "profile": {
+      "imgSrc": "",
+      "name": "Savannah Nguyen"
+    },
+    "date": "January 7, 2023"
+  },
+  {
+    "id": "10",
+    "title": "Team Security Update",
+    "description": "Because we take security, privacy, and transparency very seriously, we are sharing the details of a recent incident.",
+    "imgSrc": "",
+    "profile": {
+      "imgSrc": "",
+      "name": "Bessie Cooper"
+    },
+    "date": "December 24, 2022"
+  },
+  {
+    "id": "11",
+    "title": "Everything you need to know about our first price change and plan updates",
+    "description": "Over the years, we have transformed TeamApp from a channel-based messaging app to your digital HQ, adding more value to empower our customers.",
+    "imgSrc": "",
+    "profile": {
+      "imgSrc": "",
+      "name": "Kristin Watson"
+    },
+    "date": "December 10, 2022"
+  },
+  {
+    "id": "12",
+    "title": "New profile updates enhance hybrid work experience for teams",
+    "description": "Introducing new ways to foster connection, collaboration and inclusion with teammates in your digital HQ.",
+    "imgSrc": "",
+    "profile": {
+      "imgSrc": "",
+      "name": "Wade Warren"
+    },
+    "date": "November 20, 2022"
+  },
+  {
+    "id": "13",
+    "title": "A new look and improved functionality for the TeamApp iPad",
+    "description": "Introducing ways to help you stay productive, organized and connected from anywhere.",
+    "imgSrc": "",
+    "profile": {
+      "imgSrc": "",
+      "name": "Jenny Wilson"
+    },
+    "date": "November 4, 2022"
+  },
+  {
+    "id": "14",
+    "title": "Leveling the playing field in the new hybrid workplace",
+    "description": "Data from the TeamForum reveals alarming discrepancies between who is and isn’t coming into the office.",
+    "imgSrc": "",
+    "profile": {
+      "imgSrc": "",
+      "name": "Floyd Miles"
+    },
+    "date": "October 30, 2022"
+  },
+  {
+    "id": "15",
+    "title": "Everything you need to know about our first price change and plan updates",
+    "description": "Over the years, we have transformed TeamApp from a channel-based messaging app to your digital HQ, adding more value to empower our customers",
+    "imgSrc": "",
+    "profile": {
+      "imgSrc": "",
+      "name": "Cody Fisher"
+    },
+    "date": "October 14, 2022"
+  },
+  {
+    "id": "16",
+    "title": "Exploring better ways to work",
+    "description": "Reimagining work and management for a more flexible, productive and balanced future.",
+    "imgSrc": "",
+    "profile": {
+      "imgSrc": "",
+      "name": "Guy Hawkins"
+    },
+    "date": "October 25, 2022"
+  },
+  {
+    "id": "17",
+    "title": "Winning the war for talent in the post-pandemic world",
+    "description": "Future Forum study of 10,000 knowledge workers shows that 93% want flexibility in when and how they work; more than half are open to a job change.",
+    "imgSrc": "",
+    "profile": {
+      "imgSrc": "",
+      "name": "Mark Brooklyn"
+    },
+    "date": "July 29, 2022"
+  },
+  {
+    "id": "18",
+    "title": "Say hello to the updated TeamApp Forum",
+    "description": "Bring all the magic of the community right into TeamApp.",
+    "imgSrc": "",
+    "profile": {
+      "imgSrc": "",
+      "name": "Jane Cooper"
+    },
+    "date": "July 11, 2022"
+  }
+]
