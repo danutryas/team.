@@ -18,7 +18,7 @@ const Button: React.FC<Button> = (props: Button) => {
 
   return (
     <button
-      className={`px-11 py-[10px] text-lg rounded-[4px]  ${themeStyle()} ${
+      className={`px-11 py-[10px] text-lg rounded-[4px] whitespace-nowrap	 ${themeStyle()} ${
         className ?? ""
       }`}
     >
