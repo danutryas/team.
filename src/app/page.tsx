@@ -88,7 +88,6 @@ export default function Home() {
           <h1 className="text-h1-mobile sm:text-h1 text-center px-4">
             What people say about Team
           </h1>
-          {/* <div className="relative"> */}
           <div className="flex flex-col gap-12">
             <div className="whitespace-nowrap overflow-x-visible scroll-smooth scroll-0 no-scrollbar p-12 -ml-8 md:p-10 md:-ml-10">
               {Reviews.map((review: Review, index) => (
@@ -132,7 +131,6 @@ export default function Home() {
                 />
               </svg>
             </div>
-            {/* </div> */}
           </div>
         </div>
       </div>
