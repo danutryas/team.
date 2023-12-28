@@ -1,8 +1,20 @@
 import HomeBuilder from "@/components/builder/homeBuilder";
+import ReviewCard from "@/components/cards/reviewCard";
 import Header from "@/components/header";
 import Hero from "@/components/hero";
 import Image from "next/image";
 import Link from "next/link";
+import Reviews from "../data/review.json";
+
+interface Review {
+  star: number;
+  text: string;
+  profile: {
+    imgSrc: string;
+    name: string;
+    position: string;
+  };
+}
 
 export default function Home() {
   return (
@@ -71,6 +83,59 @@ export default function Home() {
         imgSrc="/images/image-3.png"
         section={3}
       />
+      <div className="h-auto bg-off-white text-dark-blue pt-8 overflow-x-hidden pb-48">
+        <div className="h-full w-full container mx-auto flex flex-col gap-24">
+          <h1 className="text-h1-mobile sm:text-h1 text-center px-4">
+            What people say about Team
+          </h1>
+          {/* <div className="relative"> */}
+          <div className="flex flex-col gap-12">
+            <div className="whitespace-nowrap overflow-x-visible scroll-smooth scroll-0 no-scrollbar p-12 -ml-8 md:p-10 md:-ml-10">
+              {Reviews.map((review: Review, index) => (
+                <ReviewCard
+                  key={index}
+                  description={review.text}
+                  name={review.profile.name}
+                  position={review.profile.position}
+                />
+              ))}
+            </div>
+            <div className="self-center md:self-end flex gap-6">
+              <svg
+                width="32"
+                height="32"
+                viewBox="0 0 32 32"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M14.6667 6.6665L5.33337 15.9998L14.6667 25.3332M5.33337 15.9998H26.6667"
+                  stroke="#5468E7"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                />
+              </svg>
+              <svg
+                width="32"
+                height="32"
+                viewBox="0 0 32 32"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M5.33337 15.9998H26.6667M17.3334 6.6665L26.6667 15.9998L17.3334 25.3332"
+                  stroke="#5468E7"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                />
+              </svg>
+            </div>
+            {/* </div> */}
+          </div>
+        </div>
+      </div>
     </>
   );
 }
