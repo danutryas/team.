@@ -1,113 +1,134 @@
+import Header from "@/components/header";
 import Image from "next/image";
 
-export default function Home() {
+export default function Blog() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">src/app/page.tsx</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+    <>
+      <Header theme="dark" />
+      <div className="bg-off-white min-h-screen text-dark-blue py-48">
+        <div className="container mx-auto w-full flex flex-col gap-28">
+          <div className="flex flex-col">
+            <div className="flex flex-col gap-14">
+              <h1 className="text-h1-mobile sm:text-h1 px-48">
+                Data exported by Team Cloud organization administrators
+                contained private files
+              </h1>
+              <div className="flex gap-2 px-48">
+                <div className="w-12 h-12 rounded-full bg-soft-blue relative">
+                  <Image
+                    src={"/images/Ellipse.png"}
+                    alt="profile"
+                    height="0"
+                    width="0"
+                    sizes="100vw"
+                    style={{ height: "100%", width: "100%" }}
+                  />
+                </div>
+                <div className="text-desaturated-blue flex items-center">
+                  <p className="pr-2">Mark Brooklyn</p>
+                  <div className="h-6 w-[1px] bg-desaturated-blue"></div>
+                  <p className="pl-2">June 14, 2023</p>
+                </div>
+              </div>
+              <Image
+                src={"/images/Rectangle.png"}
+                height="0"
+                width="0"
+                sizes="100vw"
+                style={{ height: "100%", width: "100%" }}
+                alt="content"
+              />
+            </div>
+
+            <div className="flex flex-col gap-20 mt-20 px-48">
+              <div className="text-p text-[#25313cd7] flex flex-col gap-8">
+                <p>
+                  Administrators of Team Cloud organizations can export public
+                  data from their organization via the organization settings
+                  menu. The exports include all the data that appears in public
+                  streams, and can be used to migrate from Team Cloud to
+                  self-hosting Team. Note that exporting private data is a
+                  separate process that requires contacting Team Support.
+                </p>
+                <p>
+                  Due to a bug in the public export code, exports of public data
+                  contained all uploaded files, even those from private messages
+                  and private streams. This may have allowed organization owners
+                  or administrators to extract uploaded files that they were not
+                  otherwise allowed to access. The content of non-public
+                  messages was never included in public exports.
+                </p>
+                <p>
+                  This bug has existed since the public export feature was
+                  implemented in August 2019. We have deleted all existing Team
+                  Cloud exports from our servers, and will be making changes to
+                  auto-expire all exports after 7 days in the future. This bug
+                  was fixed for self-hosted users in the Team Server 5.4
+                  release.
+                </p>
+                <p>
+                  We have notified by email all administrators and users in
+                  non-deactivated Team Cloud organizations who may have been
+                  impacted by this bug. As many organizations have never
+                  exported their data, most Team Cloud users were not affected.
+                </p>
+                <p>
+                  We would like to thank Antoine Benoist for bringing this issue
+                  to our attention.
+                </p>
+              </div>
+              {/* profile */}
+              <div className="flex gap-6 items-center">
+                <div className="w-16 h-16 relative">
+                  <Image
+                    src={"/images/Ellipse.png"}
+                    alt="profile"
+                    height="0"
+                    width="0"
+                    sizes="100vw"
+                    style={{ height: "100%", width: "100%" }}
+                  />
+                </div>
+                <div className="flex flex-col gap-3">
+                  <h4 className="text-h4 text-soft-violet text-bold">
+                    Written by
+                  </h4>
+                  <h3 className="text-h3">Mark Brooklyn</h3>
+                  <p className="text-caption w-80">
+                    COO at Team. Author of the upcoming book on Team Management
+                    and Leadership.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="border-[1px] border-[#BBC8D4] mx-48"></div>
+          <div className="flex flex-col gap-12 px-48">
+            <p className="text-p">Join the conversation</p>
+            <div className="flex gap-4">
+              <div className="w-14 h-14 rounded-full bg-soft-blue relative">
+                <Image
+                  src={"/images/Ellipse.png"}
+                  alt="profile"
+                  height="0"
+                  width="0"
+                  sizes="100vw"
+                  style={{ height: "100%", width: "100%" }}
+                />
+              </div>
+              <textarea
+                name=""
+                id=""
+                cols={30}
+                rows={10}
+                className="w-full p-4 rounded-[4px] border-desaturated-blue border-2 bg-transparent"
+                placeholder="Comments"
+              ></textarea>
+            </div>
+            {/* comment */}
+          </div>
         </div>
       </div>
-
-      <div className="relative flex place-items-center before:absolute before:h-[300px] before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 before:lg:h-[360px] z-[-1]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
-
-      <div className="mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Docs{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Learn{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Templates{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Explore starter templates for Next.js.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Deploy{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
+    </>
   );
 }

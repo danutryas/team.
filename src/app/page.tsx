@@ -21,9 +21,9 @@ export default function Home() {
     <>
       <Header theme="light" />
       <Hero />
-      <div className="h-screen bg-off-white text-dark-blue overflow-x-hidden">
-        <div className="h-full w-full container mx-auto px-7 flex items-start md:items-center relative">
-          <div className="basis-full md:basis-2/5 flex flex-col gap-14 mt-[640px] md:mt-0">
+      <div className="min-h-screen bg-off-white text-dark-blue overflow-x-hidden relative ">
+        <div className="min-h-screen h-full w-full container mx-auto px-7 flex items-start md:items-center ">
+          <div className="basis-full md:basis-2/5 flex flex-col gap-14 mt-[100vh] md:mt-0 self-center h-full">
             <div className="flex-col flex gap-4  ">
               <h1 className="text-h1-mobile sm:text-h1 ">
                 Chats for your distributed teams
@@ -52,11 +52,11 @@ export default function Home() {
               </svg>
             </div>
           </div>
-          <div className="w-full absolute right-0 md:-right-[40%] top-12 md:top-1/2 md:transform md:-translate-y-1/2">
+          <div className="md:h-[80vh] w-full md:w-auto h-auto absolute right-0 top-8 md:top-1/2 md:transform md:-translate-y-1/2">
             <Image
               src="/images/mockup.svg"
               alt="mockup app"
-              style={{ width: "110%", height: "110%" }}
+              style={{ width: "100%", height: "80vh" }}
               width="0"
               height="0"
               sizes="100vw"
