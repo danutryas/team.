@@ -37,6 +37,7 @@ export default function Blog() {
                 description={blog.description}
                 profile={blog.profile}
                 date={blog.date}
+                id={blog.id}
               />
             ))}
           </div>

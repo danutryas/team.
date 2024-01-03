@@ -1,7 +1,12 @@
+"use client";
 import Header from "@/components/header";
 import Image from "next/image";
+import { usePathname } from "next/navigation";
+import Blogs from "../../../data/blogs.json";
 
 export default function Blog() {
+  const pathname = usePathname();
+  const id = pathname.split("/")[2] as string;
   return (
     <>
       <Header theme="dark" />
@@ -10,8 +15,7 @@ export default function Blog() {
           <div className="flex flex-col">
             <div className="flex flex-col gap-14">
               <h1 className="text-h1-mobile sm:text-h1 px-48">
-                Data exported by Team Cloud organization administrators
-                contained private files
+                {Blogs[Number(id)].title}
               </h1>
               <div className="flex gap-2 px-48">
                 <div className="w-12 h-12 rounded-full bg-soft-blue relative">
@@ -25,9 +29,9 @@ export default function Blog() {
                   />
                 </div>
                 <div className="text-desaturated-blue flex items-center">
-                  <p className="pr-2">Mark Brooklyn</p>
+                  <p className="pr-2">{Blogs[Number(id)].profile.name}</p>
                   <div className="h-6 w-[1px] bg-desaturated-blue"></div>
-                  <p className="pl-2">June 14, 2023</p>
+                  <p className="pl-2">{Blogs[Number(id)].date}</p>
                 </div>
               </div>
               <Image
@@ -93,7 +97,7 @@ export default function Blog() {
                   <h4 className="text-h4 text-soft-violet text-bold">
                     Written by
                   </h4>
-                  <h3 className="text-h3">Mark Brooklyn</h3>
+                  <h3 className="text-h3">{Blogs[Number(id)].profile.name}</h3>
                   <p className="text-caption w-80">
                     COO at Team. Author of the upcoming book on Team Management
                     and Leadership.

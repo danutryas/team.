@@ -1,6 +1,8 @@
 import Image from "next/image";
+import Link from "next/link";
 
 interface BlogCard {
+  id: string;
   title: string;
   description: string;
   profile: {
@@ -11,12 +13,12 @@ interface BlogCard {
 }
 
 const BlogCard: React.FC<BlogCard> = (props) => {
-  const { title, description, profile, date } = props;
+  const { id, title, description, profile, date } = props;
   return (
     <div className="w-full h-full shadow-[#7676b23d] shadow-xl flex flex-col gap-6 bg-off-white text-dark-blue rounded-lg">
       <div className="relative">
         <Image
-          src={"/images/image-1.png"}
+          src={"/images/Rectangle.png"}
           alt="card wallpaper"
           sizes="100vw"
           height="0"
@@ -27,7 +29,9 @@ const BlogCard: React.FC<BlogCard> = (props) => {
       </div>
       <div className="px-4 pb-4 flex flex-col gap-12 justify-between h-full">
         <div className="flex flex-col gap-6">
-          <h3 className="text-h3 text-soft-blue">{title}</h3>
+          <Link href={`/blog/${id}`}>
+            <h3 className="text-h3 text-soft-blue">{title}</h3>
+          </Link>
           <p className="text-caption text-dark-blue">{description}</p>
         </div>
         <div className="flex gap-2">

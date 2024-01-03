@@ -30,7 +30,7 @@ const Header: React.FC<Header> = ({ theme }) => {
             <ul className="flex md:gap-7 lg:gap-14 items-center">
               <li>
                 <Link
-                  href="/product"
+                  href="/"
                   className={`underline text-lg font-medium ${
                     isDark()
                       ? "text-dark-blue"
@@ -42,7 +42,7 @@ const Header: React.FC<Header> = ({ theme }) => {
               </li>
               <li>
                 <Link
-                  href="/about"
+                  href="/blog"
                   className={`underline text-lg font-medium ${
                     isDark()
                       ? "text-dark-blue"
@@ -54,7 +54,7 @@ const Header: React.FC<Header> = ({ theme }) => {
               </li>
               <li>
                 <Link
-                  href="/about"
+                  href="/"
                   className={`underline text-lg font-medium ${
                     isDark()
                       ? "text-dark-blue"
@@ -66,7 +66,7 @@ const Header: React.FC<Header> = ({ theme }) => {
               </li>
               <li>
                 <Link
-                  href="/about"
+                  href="/"
                   className={`underline text-lg font-medium ${
                     isDark()
                       ? "text-dark-blue"
